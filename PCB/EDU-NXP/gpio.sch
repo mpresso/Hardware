@@ -1,0 +1,462 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:74LVC1G04GW
+LIBS:amesser-ad
+LIBS:amesser-cmos4000
+LIBS:amesser-conn
+LIBS:amesser-discrete
+LIBS:amesser-linear
+LIBS:amesser-power
+LIBS:amesser-usb
+LIBS:audio-vlsi
+LIBS:bat54_c
+LIBS:BLM15HG6015N1D
+LIBS:g5v2
+LIBS:lm2596
+LIBS:mcu-nxp
+LIBS:mcu-st
+LIBS:MIC2025
+LIBS:net-phy
+LIBS:nsi50010yt1g
+LIBS:PRTR5V0U2X
+LIBS:regulators
+LIBS:rs485_rs232_can
+LIBS:s25fl032p0xmfi013
+LIBS:SCHA5B0200
+LIBS:Si50x
+LIBS:Transil_diode
+LIBS:w_device
+LIBS:LPC4337JBD144
+LIBS:IS42S16400F
+LIBS:TXB0108
+LIBS:FT2232H
+LIBS:93CXX
+LIBS:TJA1040
+LIBS:tvs
+LIBS:PBSS5240
+LIBS:pbss5240xf
+LIBS:edu-ciaa-nxp-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title "CIAA GPIO/SPI/I2C/USB/ANALOG"
+Date "10 jun 2014"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5350 2850 2    60   BiDi ~ 0
+GPIO0
+Text HLabel 5350 3050 2    60   BiDi ~ 0
+GPIO2
+Text HLabel 5350 3250 2    60   BiDi ~ 0
+GPIO4
+Text HLabel 10250 3500 2    60   BiDi ~ 0
+GPIO6
+Text HLabel 10250 3700 2    60   BiDi ~ 0
+GPIO8
+Text HLabel 5350 2950 2    60   BiDi ~ 0
+GPIO1
+Text HLabel 5350 3150 2    60   BiDi ~ 0
+GPIO3
+Text HLabel 10250 3400 2    60   BiDi ~ 0
+GPIO5
+Text HLabel 10250 3600 2    60   BiDi ~ 0
+GPIO7
+Text HLabel 10250 3200 2    60   Input ~ 0
+WAKEUP
+$Comp
+L THERMISTOR TH8
+U 1 1 52CA1D91
+P 3600 2600
+F 0 "TH8" V 3700 2650 50  0000 C CNN
+F 1 "MF-MSMF030-2" V 3500 2600 50  0000 C CNN
+F 2 "~" H 3600 2600 60  0000 C CNN
+F 3 "~" H 3600 2600 60  0000 C CNN
+	1    3600 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR080
+U 1 1 52CA1E6C
+P 3250 2600
+F 0 "#PWR080" H 3250 2560 30  0001 C CNN
+F 1 "+3.3V" H 3250 2710 30  0000 C CNN
+F 2 "" H 3250 2600 60  0000 C CNN
+F 3 "" H 3250 2600 60  0000 C CNN
+	1    3250 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 2600 3350 2600
+$Comp
+L THERMISTOR TH9
+U 1 1 52CA1E88
+P 10150 2450
+F 0 "TH9" V 10250 2500 50  0000 C CNN
+F 1 "MF-MSMF110-2" V 10050 2450 50  0000 C CNN
+F 2 "~" H 10150 2450 60  0000 C CNN
+F 3 "~" H 10150 2450 60  0000 C CNN
+	1    10150 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10450 2450 10400 2450
+Text HLabel 3600 2950 0    60   BiDi ~ 0
+I2C_SDA
+Text HLabel 3600 2850 0    60   Input ~ 0
+I2C_SCL
+Text HLabel 8100 3900 0    60   Output ~ 0
+SPI_MISO
+Text HLabel 8100 4000 0    60   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	3550 3950 3550 5200
+$Comp
+L +5V #PWR081
+U 1 1 52CA305A
+P 10450 2450
+F 0 "#PWR081" H 10450 2540 20  0001 C CNN
+F 1 "+5V" H 10450 2540 30  0000 C CNN
+F 2 "" H 10450 2450 60  0000 C CNN
+F 3 "" H 10450 2450 60  0000 C CNN
+	1    10450 2450
+	0    1    1    0   
+$EndComp
+Text Notes 5150 900  0    60   ~ 0
+Conectores de expansión LVTTL.\nEn formato de pines, 2.54mm de pitch.
+$Comp
+L GNDA #PWR082
+U 1 1 52DEB0D0
+P 3550 5200
+F 0 "#PWR082" H 3550 5200 40  0001 C CNN
+F 1 "GNDA" H 3550 5130 40  0000 C CNN
+F 2 "" H 3550 5200 60  0000 C CNN
+F 3 "" H 3550 5200 60  0000 C CNN
+	1    3550 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L THERMISTOR TH2
+U 1 1 539535DA
+P 8450 2450
+F 0 "TH2" V 8550 2500 50  0000 C CNN
+F 1 "MF-MSMF030-2" V 8350 2450 50  0000 C CNN
+F 2 "~" H 8450 2450 60  0000 C CNN
+F 3 "~" H 8450 2450 60  0000 C CNN
+	1    8450 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR083
+U 1 1 539535E0
+P 8100 2450
+F 0 "#PWR083" H 8100 2410 30  0001 C CNN
+F 1 "+3.3V" H 8100 2560 30  0000 C CNN
+F 2 "" H 8100 2450 60  0000 C CNN
+F 3 "" H 8100 2450 60  0000 C CNN
+	1    8100 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 2450 8200 2450
+$Comp
+L THERMISTOR TH1
+U 1 1 539535E7
+P 5200 2600
+F 0 "TH1" V 5300 2650 50  0000 C CNN
+F 1 "MF-MSMF110-2" V 5100 2600 50  0000 C CNN
+F 2 "~" H 5200 2600 60  0000 C CNN
+F 3 "~" H 5200 2600 60  0000 C CNN
+	1    5200 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 2600 5450 2600
+$Comp
+L +5V #PWR084
+U 1 1 539535EE
+P 5500 2600
+F 0 "#PWR084" H 5500 2690 20  0001 C CNN
+F 1 "+5V" H 5500 2690 30  0000 C CNN
+F 2 "" H 5500 2600 60  0000 C CNN
+F 3 "" H 5500 2600 60  0000 C CNN
+	1    5500 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 2600 4000 2750
+Text HLabel 8100 3000 0    60   Input ~ 0
+ENET_RXD1
+Wire Wire Line
+	8100 3000 8950 3000
+Wire Wire Line
+	8950 2900 8950 2450
+Wire Wire Line
+	8950 2450 8700 2450
+Wire Wire Line
+	9750 2900 9750 2450
+Wire Wire Line
+	9750 2450 9900 2450
+Text HLabel 8100 3100 0    60   Input ~ 0
+ENET_TX_EN
+Wire Wire Line
+	8100 3100 8950 3100
+Wire Wire Line
+	8100 3900 8950 3900
+Wire Wire Line
+	8100 4000 8950 4000
+Text HLabel 3600 3050 0    60   Input ~ 0
+TEC_COL0
+Wire Wire Line
+	3600 3050 4000 3050
+Text HLabel 8100 3200 0    60   Input ~ 0
+ENET_RXD0
+Wire Wire Line
+	8100 3200 8950 3200
+Text HLabel 8100 3300 0    60   Input ~ 0
+ENET_CRS_DV
+Wire Wire Line
+	8100 3300 8950 3300
+Text HLabel 8100 3400 0    60   BiDi ~ 0
+ENET_MDIO
+Wire Wire Line
+	8100 3400 8950 3400
+Text HLabel 8100 3500 0    60   Output ~ 0
+ENET_TXD0
+Wire Wire Line
+	8100 3500 8950 3500
+Text HLabel 8100 3600 0    60   Input ~ 0
+ENET_REF_CLK
+Wire Wire Line
+	8100 3600 8950 3600
+Text HLabel 8100 3700 0    60   Output ~ 0
+ENET_TXD1
+Wire Wire Line
+	8100 3700 8950 3700
+Text HLabel 3550 3350 0    60   Output ~ 0
+TEC_F0
+Wire Wire Line
+	3550 3350 4000 3350
+Text HLabel 3100 4250 0    60   Input ~ 0
+ADC0_1
+Wire Wire Line
+	3100 4250 3400 4250
+Text HLabel 3550 3450 0    60   Output ~ 0
+TEC_F1
+Wire Wire Line
+	3550 3450 4000 3450
+Text HLabel 2950 4050 0    60   Output ~ 0
+DAC
+Wire Wire Line
+	2950 4050 3400 4050
+Text HLabel 3550 3550 0    60   Output ~ 0
+TEC_F2
+Text HLabel 3550 3650 0    60   Output ~ 0
+TEC_F3
+Wire Wire Line
+	3550 3550 4000 3550
+Wire Wire Line
+	4000 3650 3550 3650
+Text HLabel 5350 3350 2    60   Output ~ 0
+LCD1
+Text HLabel 5350 3450 2    60   Output ~ 0
+LCD2
+Text HLabel 5350 3550 2    60   Output ~ 0
+LCD3
+Wire Wire Line
+	5350 3350 4800 3350
+Wire Wire Line
+	5350 3450 4800 3450
+Wire Wire Line
+	5350 3550 4800 3550
+Text HLabel 5350 3750 2    60   Output ~ 0
+LCD_RS
+Wire Wire Line
+	5350 3750 4800 3750
+Text HLabel 5350 3850 2    60   Output ~ 0
+LCD_EN
+Wire Wire Line
+	5350 3850 4800 3850
+Text HLabel 5350 3650 2    60   Output ~ 0
+LCD4
+Wire Wire Line
+	5350 3650 4800 3650
+Wire Wire Line
+	4800 2850 5350 2850
+Wire Wire Line
+	4800 2950 5350 2950
+Wire Wire Line
+	5350 3050 4800 3050
+Wire Wire Line
+	4800 3150 5350 3150
+Wire Wire Line
+	3850 2600 4000 2600
+Wire Wire Line
+	4800 2750 4800 2600
+Wire Wire Line
+	4800 2600 4950 2600
+Wire Wire Line
+	3600 2850 4000 2850
+Wire Wire Line
+	4000 2950 3600 2950
+Wire Wire Line
+	5350 3250 4800 3250
+Text HLabel 10250 3000 2    60   Input ~ 0
+CAN_RD
+Text HLabel 10250 3100 2    60   Output ~ 0
+CAN_TD
+Wire Wire Line
+	10250 3000 9750 3000
+Wire Wire Line
+	9750 3100 10250 3100
+Wire Wire Line
+	10250 3400 9750 3400
+Wire Wire Line
+	10250 3200 9750 3200
+Text HLabel 3600 3150 0    60   Input ~ 0
+TEC_COL1
+Text HLabel 3600 3250 0    60   Input ~ 0
+TEC_COL2
+Wire Wire Line
+	3600 3250 4000 3250
+Wire Wire Line
+	4000 3150 3600 3150
+Text HLabel 3550 3850 0    60   Input ~ 0
+ISP
+Wire Wire Line
+	3550 3850 4000 3850
+Wire Wire Line
+	10250 3500 9750 3500
+Text HLabel 3100 4650 0    60   Input ~ 0
+ADC0_3
+Wire Wire Line
+	3100 4650 3400 4650
+Wire Wire Line
+	10250 3600 9750 3600
+Wire Wire Line
+	10250 3700 9750 3700
+Text HLabel 3100 4450 0    60   Input ~ 0
+ADC0_2
+Wire Wire Line
+	3100 4450 3400 4450
+$Comp
+L CONN_20X2 P1
+U 1 1 5398AC24
+P 4400 3700
+F 0 "P1" H 4400 4750 60  0000 C CNN
+F 1 "CONN_20X2" V 4400 3700 50  0000 C CNN
+F 2 "" H 4400 3700 60  0000 C CNN
+F 3 "" H 4400 3700 60  0000 C CNN
+	1    4400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_20X2 P2
+U 1 1 5398AC33
+P 9350 3850
+F 0 "P2" H 9350 4900 60  0000 C CNN
+F 1 "CONN_20X2" V 9350 3850 50  0000 C CNN
+F 2 "" H 9350 3850 60  0000 C CNN
+F 3 "" H 9350 3850 60  0000 C CNN
+	1    9350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 5398AC42
+P 3650 4050
+F 0 "R12" V 3730 4050 40  0000 C CNN
+F 1 "R" V 3657 4051 40  0000 C CNN
+F 2 "~" V 3580 4050 30  0000 C CNN
+F 3 "~" H 3650 4050 30  0000 C CNN
+	1    3650 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R13
+U 1 1 5398AC4F
+P 3650 4250
+F 0 "R13" V 3730 4250 40  0000 C CNN
+F 1 "R" V 3657 4251 40  0000 C CNN
+F 2 "~" V 3580 4250 30  0000 C CNN
+F 3 "~" H 3650 4250 30  0000 C CNN
+	1    3650 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R14
+U 1 1 5398AC55
+P 3650 4450
+F 0 "R14" V 3730 4450 40  0000 C CNN
+F 1 "R" V 3657 4451 40  0000 C CNN
+F 2 "~" V 3580 4450 30  0000 C CNN
+F 3 "~" H 3650 4450 30  0000 C CNN
+	1    3650 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R15
+U 1 1 5398AC5B
+P 3650 4650
+F 0 "R15" V 3730 4650 40  0000 C CNN
+F 1 "R" V 3657 4651 40  0000 C CNN
+F 2 "~" V 3580 4650 30  0000 C CNN
+F 3 "~" H 3650 4650 30  0000 C CNN
+	1    3650 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 4050 4000 4050
+Wire Wire Line
+	4000 4250 3900 4250
+Wire Wire Line
+	4000 4450 3900 4450
+Wire Wire Line
+	4000 4650 3900 4650
+Wire Wire Line
+	3550 4550 4000 4550
+Wire Wire Line
+	3550 4350 4000 4350
+Connection ~ 3550 4550
+Wire Wire Line
+	3550 4150 4000 4150
+Connection ~ 3550 4350
+Wire Wire Line
+	3550 3950 4000 3950
+Connection ~ 3550 4150
+$EndSCHEMATC
