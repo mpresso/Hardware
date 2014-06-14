@@ -1,8 +1,6 @@
-update=12/06/2014 10:22:25 p.m.
+update=13/06/2014 07:30:59 p.m.
 version=1
-last_client=eeschema
-[general]
-version=1
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -158,3 +156,5 @@ LibName63=components/tvs
 LibName64=components/PBSS5240
 LibName65=components/pbss5240xf
 LibName66=LED_RGB
+[general]
+version=1

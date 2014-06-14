@@ -71,8 +71,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
-Title "CIAA RS485 - RS232 - CAN"
-Date "13 jun 2014"
+Title "EDU CIAA RS485"
+Date "14 jun 2014"
 Rev "1.0"
 Comp ""
 Comment1 ""

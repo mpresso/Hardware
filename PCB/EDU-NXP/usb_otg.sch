@@ -71,8 +71,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
-Title "USB OTG CIAA"
-Date "13 jun 2014"
+Title "EDU CIAA USB OTG"
+Date "14 jun 2014"
 Rev "1.0"
 Comp ""
 Comment1 ""
@@ -445,4 +445,6 @@ Wire Wire Line
 	7950 4300 8050 4300
 Wire Wire Line
 	3800 3300 3800 4800
+NoConn ~ 10150 4000
+NoConn ~ 10150 4100
 $EndSCHEMATC
