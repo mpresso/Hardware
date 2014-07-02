@@ -1,6 +1,6 @@
-update=13/06/2014 07:30:59 p.m.
+update=16/06/2014 02:31:07 p.m.
 version=1
-last_client=kicad
+last_client=eeschema
 [cvpcb]
 version=1
 NetIExt=net
@@ -81,6 +81,8 @@ LibName51=footprints/MicroUSB-ZX62AB&B-5PA
 LibName52=footprints/DB)-K22X-E9P-NJ
 LibName53=inductors
 LibName54=footprints/L-SRN1060
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -156,5 +158,3 @@ LibName63=components/tvs
 LibName64=components/PBSS5240
 LibName65=components/pbss5240xf
 LibName66=LED_RGB
-[general]
-version=1
